@@ -28,8 +28,11 @@ Rails.application.routes.draw do
 		resources :item, :controller => "cart_items"
   end
 
-  resources :orders do
-    get 'pay_with_credit_card'
+  resources :orders do 
+    member do 
+      get :pay_with_credit_card
+      post :allpay_notify
+    end
   end
 
   namespace :account do

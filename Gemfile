@@ -40,6 +40,10 @@ gem 'carrierwave'
 gem "mini_magick"
 gem "font-awesome-rails"
 gem 'aasm'
+gem "roadie", "2.4.3"
+
+gem "activemerchant",         "~> 1.43.1"
+gem "active_merchant_allpay", ">=0.1.2"
 
 group :development do
   gem "annotate"
@@ -48,6 +52,7 @@ group :development do
   gem 'pry-rails'
   gem 'pry-stack_explorer'
   gem 'pry-theme'
+  gem "letter_opener"
 end
 
 group :development, :test do
