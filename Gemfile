@@ -53,6 +53,7 @@ group :development do
   gem 'pry-stack_explorer'
   gem 'pry-theme'
   gem "letter_opener"
+  gem "sqlite3"
 end
 
 group :development, :test do
@@ -64,5 +65,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do 
+  gem "pg"
+  gem "rails_12factor"
 end
 
